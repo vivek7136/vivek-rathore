@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Bulb</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(bg.jpg);
+        }
+        #Bulb-off img, #Bulb-on img{
+            height: 100%;
+            width: 100%;
+        }
+        #Bulb-off{
+            position: relative;
+        }
+        #Bulb-on{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        #Bulb-off:hover #Bulb-on{
+            display: block;
+        }
+        .container{
+            width: 50%;
+            height: 50%;
+            margin-top: 5%;
+            margin-left: 25%;
+            border: 10px solid black;
+            background-color: black;
+            border-radius: 10px;
+        }
+        .container:hover{
+            border: 10px solid yellow;
+        }
+        #heading{
+            text-align: center;
+            margin: 20px;
+            color: yellow;
+        }
+        #footer{
+            text-align: center;
+            color: orange;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">HTML & CSS Bulb</h1>
+    <div class="container">
+        <div id="Bulb-off">
+            <img src="Bulb Off.jpg" alt="">
+            <div id="Bulb-on">
+                <img src="Bubl On.jpg" alt="">
+            </div>
+    </div>
+    </div>
+    
+    <h1 id="footer">Hover over the bulb to turn on</h1>
+</body>
+</html>
